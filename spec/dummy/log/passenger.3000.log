@@ -1,0 +1,72 @@
+[ 2015-11-18 15:34:12.0983 28267/7fbaaa114780 age/Wat/Main.cpp:1274 ]: Starting Passenger watchdog...
+[ 2015-11-18 15:34:12.1055 28270/7f3fdcbe9780 age/Cor/Main.cpp:957 ]: Starting Passenger core...
+[ 2015-11-18 15:34:12.1056 28270/7f3fdcbe9780 age/Cor/Main.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-11-18 15:34:12.1073 28270/7f3fdcbe9780 age/Cor/Main.cpp:707 ]: Passenger core online, PID 28270
+[ 2015-11-18 15:34:12.1149 28277/7f1d2f441780 age/Ust/Main.cpp:430 ]: Starting Passenger UstRouter...
+[ 2015-11-18 15:34:12.1152 28277/7f1d2f441780 age/Ust/Main.cpp:311 ]: Passenger UstRouter online, PID 28277
+App 28313 stdout: 
+App 28331 stdout: 
+
+[ 2015-11-18 15:35:21.8531 28270/7f3fd5c4e700 age/Cor/Main.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-11-18 15:35:21.8531 28270/7f3fdcbe9780 age/Cor/Main.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-11-18 15:35:21.8532 28270/7f3fdcbe9780 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 28331, application /home/butch/workspace/jive_add_ons/test/dummy/public (development)
+[ 2015-11-18 15:35:21.8534 28270/7f3fd53cc700 Ser/Server.h:752 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-11-18 15:35:21.8534 28270/7f3fd53cc700 Ser/Server.h:443 ]: [ServerThr.2] Shutdown finished
+[ 2015-11-18 15:35:21.8536 28270/7f3faffff700 Ser/Server.h:752 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2015-11-18 15:35:21.8536 28270/7f3faffff700 Ser/Server.h:443 ]: [ServerThr.4] Shutdown finished
+[ 2015-11-18 15:35:21.8537 28270/7f3faf7fe700 Ser/Server.h:752 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-11-18 15:35:21.8538 28270/7f3faf7fe700 Ser/Server.h:443 ]: [ApiServer] Shutdown finished
+
+[ 2015-11-18 15:35:21.8541 28277/7f1d23fff700 age/Ust/Main.cpp:337 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-11-18 15:35:21.8542 28277/7f1d2f441780 age/Ust/Main.cpp:399 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-11-18 15:35:21.8542 28277/7f1d23fff700 Ser/Server.h:752 ]: [LoggerApiServer] Freed 0 spare client objects
+[ 2015-11-18 15:35:21.8542 28277/7f1d23fff700 Ser/Server.h:443 ]: [LoggerApiServer] Shutdown finished
+[ 2015-11-18 15:35:21.8543 28270/7f3fd4b4a700 Ser/Server.h:752 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2015-11-18 15:35:21.8543 28270/7f3fd4b4a700 Ser/Server.h:443 ]: [ServerThr.3] Shutdown finished
+[ 2015-11-18 15:35:21.8547 28277/7f1d2f441780 age/Ust/Main.cpp:424 ]: Passenger UstRouter shutdown finished
+[ 2015-11-18 15:35:21.8555 28270/7f3fd5c4e700 Ser/Server.h:752 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-11-18 15:35:21.8555 28270/7f3fd5c4e700 Ser/Server.h:443 ]: [ServerThr.1] Shutdown finished
+[ 2015-11-18 15:35:21.8556 28270/7f3fdcbe9780 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 28331, application /home/butch/workspace/jive_add_ons/test/dummy/public (development)
+[ 2015-11-18 15:35:21.9743 28270/7f3fdcbe9780 age/Cor/Main.cpp:942 ]: Passenger core shutdown finished
+[ 2015-11-18 15:35:43.8210 28462/7fb68ef68780 age/Wat/Main.cpp:1274 ]: Starting Passenger watchdog...
+[ 2015-11-18 15:35:43.8277 28465/7f6a1f969780 age/Cor/Main.cpp:957 ]: Starting Passenger core...
+[ 2015-11-18 15:35:43.8278 28465/7f6a1f969780 age/Cor/Main.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-11-18 15:35:43.8293 28465/7f6a1f969780 age/Cor/Main.cpp:707 ]: Passenger core online, PID 28465
+[ 2015-11-18 15:35:43.8366 28474/7f6f9dd80780 age/Ust/Main.cpp:430 ]: Starting Passenger UstRouter...
+[ 2015-11-18 15:35:43.8369 28474/7f6f9dd80780 age/Ust/Main.cpp:311 ]: Passenger UstRouter online, PID 28474
+App 28511 stdout: 
+App 28530 stdout: 
+
+
+[ 2015-11-18 16:14:53.2069 28465/7f6a189ce700 age/Cor/Main.cpp:507 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-11-18 16:14:53.2069 28474/7f6f96daa700 age/Ust/Main.cpp:337 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2015-11-18 16:14:53.2069 28465/7f6a1f969780 age/Cor/Main.cpp:876 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-11-18 16:14:53.2069 28474/7f6f9dd80780 age/Ust/Main.cpp:399 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2015-11-18 16:14:53.2069 28465/7f6a1f969780 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 28530, application /home/butch/workspace/jive_add_ons/test/dummy/public (development)
+[ 2015-11-18 16:14:53.2069 28474/7f6f96daa700 Ser/Server.h:752 ]: [LoggerApiServer] Freed 0 spare client objects
+[ 2015-11-18 16:14:53.2069 28474/7f6f96daa700 Ser/Server.h:443 ]: [LoggerApiServer] Shutdown finished
+[ 2015-11-18 16:14:53.2071 28465/7f6a037fe700 Ser/Server.h:752 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2015-11-18 16:14:53.2071 28465/7f6a037fe700 Ser/Server.h:443 ]: [ServerThr.3] Shutdown finished
+[ 2015-11-18 16:14:53.2072 28465/7f6a03fff700 Ser/Server.h:752 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2015-11-18 16:14:53.2072 28465/7f6a0277b700 Ser/Server.h:752 ]: [ApiServer] Freed 0 spare client objects
+[ 2015-11-18 16:14:53.2072 28465/7f6a03fff700 Ser/Server.h:443 ]: [ServerThr.2] Shutdown finished
+[ 2015-11-18 16:14:53.2072 28465/7f6a0277b700 Ser/Server.h:443 ]: [ApiServer] Shutdown finished
+[ 2015-11-18 16:14:53.2073 28465/7f6a189ce700 Ser/Server.h:752 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2015-11-18 16:14:53.2073 28465/7f6a189ce700 Ser/Server.h:443 ]: [ServerThr.1] Shutdown finished
+[ 2015-11-18 16:14:53.2073 28465/7f6a02ffd700 Ser/Server.h:752 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2015-11-18 16:14:53.2073 28465/7f6a02ffd700 Ser/Server.h:443 ]: [ServerThr.4] Shutdown finished
+[ 2015-11-18 16:14:53.2074 28465/7f6a1f969780 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 28530, application /home/butch/workspace/jive_add_ons/test/dummy/public (development)
+[ 2015-11-18 16:14:53.2075 28474/7f6f9dd80780 age/Ust/Main.cpp:424 ]: Passenger UstRouter shutdown finished
+[ 2015-11-18 16:14:53.3198 28465/7f6a1f969780 age/Cor/Main.cpp:942 ]: Passenger core shutdown finished
+[ 2015-11-18 16:24:25.2429 413/7f0475cda780 age/Wat/Main.cpp:1274 ]: Starting Passenger watchdog...
+[ 2015-11-18 16:24:25.2494 416/7f036a83d780 age/Cor/Main.cpp:957 ]: Starting Passenger core...
+[ 2015-11-18 16:24:25.2495 416/7f036a83d780 age/Cor/Main.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-11-18 16:24:25.2511 416/7f036a83d780 age/Cor/Main.cpp:707 ]: Passenger core online, PID 416
+[ 2015-11-18 16:24:25.2582 426/7fc180dc0780 age/Ust/Main.cpp:430 ]: Starting Passenger UstRouter...
+[ 2015-11-18 16:24:25.2585 426/7fc180dc0780 age/Ust/Main.cpp:311 ]: Passenger UstRouter online, PID 426
+App 460 stdout: 
+App 476 stdout: 
+2015/11/18 16:47:27 [error] 443#0: *8 open() "/home/butch/workspace/jive_add_ons/test/dummy/public/jive/osapps/surveys/xml" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /jive/osapps/surveys/xml HTTP/1.1", host: "localhost:3000"
+2015/11/18 16:47:27 [error] 443#0: *8 open() "/home/butch/workspace/jive_add_ons/test/dummy/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/jive/osapps/surveys/xml"
+2015/11/18 16:47:27 [error] 443#0: *8 open() "/home/butch/workspace/jive_add_ons/test/dummy/public/jive/osapps/surveys/xml" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /jive/osapps/surveys/xml HTTP/1.1", host: "localhost:3000"
+2015/11/18 16:47:27 [error] 443#0: *8 open() "/home/butch/workspace/jive_add_ons/test/dummy/public/jive/osapps/surveys/xml" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /jive/osapps/surveys/xml HTTP/1.1", host: "localhost:3000"

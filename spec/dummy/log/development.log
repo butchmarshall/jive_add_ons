@@ -1,0 +1,476 @@
+
+
+Started HEAD "/" for 127.0.0.1 at 2015-11-18 15:34:15 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jive/osapp/surveys/xml" for 127.0.0.1 at 2015-11-18 15:34:17 -0500
+
+ActionController::RoutingError (No route matches [GET] "/jive/osapp/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.7ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.3ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:34:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.9ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:34:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.5ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:34:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.3ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:34:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.9ms)
+
+
+Started HEAD "/" for 127.0.0.1 at 2015-11-18 15:35:47 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.9ms)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:35:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.7ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.9ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:35:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.3ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:35:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.3ms)
+
+
+Started GET "/osapps" for 127.0.0.1 at 2015-11-18 15:36:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:37:18 -0500
+Processing by JiveOsApps::OsAppsController#show as XML
+  Parameters: {"app_name"=>"surveys"}
+  Rendered /home/butch/workspace/jive_os_apps/app/views/jive_os_apps/os_apps/show.xml.erb (2.0ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:37:25 -0500
+
+ActionController::RoutingError (No route matches [GET] "/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.9ms)
+
+
+Started GET "/jive/add_ons/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:37:35 -0500
+Processing by JiveOsApps::OsAppsController#show as XML
+  Parameters: {"app_name"=>"surveys"}
+  Rendered /home/butch/workspace/jive_os_apps/app/views/jive_os_apps/os_apps/show.xml.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jive/add_ons/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:37:45 -0500
+Processing by JiveOsApps::OsAppsController#show as XML
+  Parameters: {"app_name"=>"surveys"}
+  Rendered /home/butch/workspace/jive_os_apps/app/views/jive_os_apps/os_apps/show.xml.erb (0.7ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jive/add_ons/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:38:29 -0500
+Processing by JiveOsApps::OsAppsController#show as XML
+  Parameters: {"app_name"=>"surveys"}
+  Rendered /home/butch/workspace/jive_os_apps/app/views/jive_os_apps/os_apps/show.xml.erb (0.7ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jive/add_ons/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:40:09 -0500
+Processing by JiveOsApps::OsAppsController#show as XML
+  Parameters: {"app_name"=>"surveys"}
+  Rendered /home/butch/workspace/jive_os_apps/app/views/jive_os_apps/os_apps/show.xml.erb (0.7ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jive/add_ons/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:43:43 -0500
+
+ActionController::RoutingError (No route matches [GET] "/jive/add_ons/osapps/surveys/xml"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  passenger (5.0.15) lib/phusion_passenger/rack/thread_handler_extension.rb:94:in `process_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+  passenger (5.0.15) lib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+  passenger (5.0.15) lib/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+  passenger (5.0.15) lib/phusion_passenger/utils.rb:111:in `block in create_thread_and_abort_on_exception'
+
+
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.8ms)
+
+
+Started GET "/jive/osapps/surveys/xml" for 127.0.0.1 at 2015-11-18 15:43:46 -0500
+Processing by JiveOsApps::OsAppsController#show as XML
+  Parameters: {"app_name"=>"surveys"}
+  Rendered /home/butch/workspace/jive_os_apps/app/views/jive_os_apps/os_apps/show.xml.erb (0.8ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (198.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (200.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateJiveAddOns (20150718193211)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "jive_add_ons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tenant_id" varchar, "client_id" varchar, "client_secret" varchar, "jive_signature" varchar, "jive_signature_url" varchar, "jive_url" varchar, "uninstalled" boolean, "attempt" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150718193211"]]
+  [1m[36m (87.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started HEAD "/" for 127.0.0.1 at 2015-11-18 16:24:28 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/butch/.rvm/gems/ruby-2.1.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)

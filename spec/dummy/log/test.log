@@ -1,0 +1,560 @@
+  [1m[36m (191.1ms)[0m  [1mCREATE TABLE "jive_add_ons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tenant_id" varchar, "client_id" varchar, "client_secret" varchar, "jive_signature" varchar, "jive_signature_url" varchar, "jive_url" varchar, "uninstalled" boolean, "attempt" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (103.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (57.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (100.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150718193211')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (141.9ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (125.8ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (140.2ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (143.6ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (92.3ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:48:28.395245"], ["updated_at", "2015-11-18 21:48:28.395245"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 20ms (ActiveRecord: 0.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (90.0ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:48:43.713477"], ["updated_at", "2015-11-18 21:48:43.713477"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 17ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (73.2ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:49:18.462943"], ["updated_at", "2015-11-18 21:49:18.462943"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (230.7ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:49:46.296911"], ["updated_at", "2015-11-18 21:49:46.296911"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered /home/butch/workspace/jive_add_ons/app/views/jive_add_ons/add_ons/create.erb within layouts/jive_add_ons/application (0.4ms)
+Completed 200 OK in 29ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (258.3ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:49:56.232776"], ["updated_at", "2015-11-18 21:49:56.232776"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered /home/butch/workspace/jive_add_ons/app/views/jive_add_ons/add_ons/create.erb within layouts/jive_add_ons/application (0.3ms)
+Completed 200 OK in 29ms (Views: 9.2ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (195.3ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:50:18.121524"], ["updated_at", "2015-11-18 21:50:18.121524"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered /home/butch/workspace/jive_add_ons/app/views/jive_add_ons/add_ons/create.erb within layouts/jive_add_ons/application (0.2ms)
+Completed 200 OK in 18ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (66.0ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:50:23.044793"], ["updated_at", "2015-11-18 21:50:23.044793"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered /home/butch/workspace/jive_add_ons/app/views/jive_add_ons/add_ons/create.erb within layouts/jive_add_ons/application (0.2ms)
+Completed 200 OK in 19ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (69.1ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:50:31.333642"], ["updated_at", "2015-11-18 21:50:31.333642"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 406 Not Acceptable in 16ms (ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (183.6ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:50:50.374518"], ["updated_at", "2015-11-18 21:50:50.374518"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered /home/butch/workspace/jive_add_ons/app/views/jive_add_ons/add_ons/create.erb within layouts/jive_add_ons/application (0.3ms)
+Completed 200 OK in 30ms (Views: 9.8ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (226.6ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:50:57.992312"], ["updated_at", "2015-11-18 21:50:57.992312"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered /home/butch/workspace/jive_add_ons/app/views/jive_add_ons/add_ons/create.erb within layouts/jive_add_ons/application (0.3ms)
+Completed 200 OK in 29ms (Views: 9.5ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (90.6ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:51:17.276175"], ["updated_at", "2015-11-18 21:51:17.276175"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered /home/butch/workspace/jive_add_ons/app/views/jive_add_ons/add_ons/create.erb within layouts/jive_add_ons/application (0.3ms)
+Completed 200 OK in 25ms (Views: 8.0ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (123.8ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:53:21.169094"], ["updated_at", "2015-11-18 21:53:21.169094"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 5.0ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (47.0ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:53:33.911154"], ["updated_at", "2015-11-18 21:53:33.911154"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 17ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (374.2ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:53:40.005206"], ["updated_at", "2015-11-18 21:53:40.005206"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 26ms (Views: 7.2ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (94.0ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:53:45.636587"], ["updated_at", "2015-11-18 21:53:45.636587"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 25ms (Views: 6.3ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (57.2ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: CONTENT_TYPE, ACCEPT
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:54:00.766144"], ["updated_at", "2015-11-18 21:54:00.766144"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 22ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (70.5ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"tenant_id"=>"555"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-18 21:54:05.742789"], ["updated_at", "2015-11-18 21:54:05.742789"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 5.1ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (58.9ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"tenantId"=>"555"}
+Unpermitted parameter: tenantId
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["tenant_id", "555"], ["created_at", "2015-11-18 21:54:16.148673"], ["updated_at", "2015-11-18 21:54:16.148673"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 24ms (Views: 6.3ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (126.1ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"tenantId"=>"A", "clientId"=>"B", "jiveUrl"=>"C", "jiveSignatureURL"=>"D"}
+Unpermitted parameters: tenantId, clientId, jiveUrl, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "jive_url", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["jive_url", "C"], ["jive_signature_url", "D"], ["created_at", "2015-11-18 21:55:56.584712"], ["updated_at", "2015-11-18 21:55:56.584712"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 27ms (Views: 6.8ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (91.8ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"tenantId"=>"A", "clientId"=>"B", "clientSecret"=>"C", "jiveUrl"=>"D", "jiveSignature"=>"E", "jiveSignatureURL"=>"F"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-18 21:56:44.184172"], ["updated_at", "2015-11-18 21:56:44.184172"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 19ms (Views: 4.9ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (204.7ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"tenantId"=>"A", "clientId"=>"B", "clientSecret"=>"C", "jiveUrl"=>"D", "jiveSignature"=>"E", "jiveSignatureURL"=>"F"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-20 03:03:25.137074"], ["updated_at", "2015-11-20 03:03:25.137074"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 27ms (Views: 6.8ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (131.6ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"tenantId"=>"A", "clientId"=>"B", "clientSecret"=>"C", "jiveUrl"=>"D", "jiveSignature"=>"E", "jiveSignatureURL"=>"F"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-20 03:11:03.791671"], ["updated_at", "2015-11-20 03:11:03.791671"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 17ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (236.2ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-20 03:11:55.774281"], ["updated_at", "2015-11-20 03:11:55.774281"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 25ms (Views: 6.3ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (87.4ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-20 03:12:08.975564"], ["updated_at", "2015-11-20 03:12:08.975564"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 27ms (Views: 7.0ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (83.3ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2015-11-20 03:12:28.836910"], ["updated_at", "2015-11-20 03:12:28.836910"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 22ms (Views: 5.9ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (62.1ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-20 03:12:43.557204"], ["updated_at", "2015-11-20 03:12:43.557204"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 16ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (70.9ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-20 03:12:59.690068"], ["updated_at", "2015-11-20 03:12:59.690068"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 20ms (Views: 5.4ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (223.7ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-20 03:13:22.086708"], ["updated_at", "2015-11-20 03:13:22.086708"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 28ms (Views: 6.8ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (227.7ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-20 03:15:16.523850"], ["updated_at", "2015-11-20 03:15:16.523850"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 26ms (Views: 6.8ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (130.7ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: tenantId, clientId, clientSecret, jiveUrl, jiveSignature, jiveSignatureURL
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "A"], ["client_id", "B"], ["client_secret", "C"], ["jive_url", "D"], ["jive_signature", "E"], ["jive_signature_url", "F"], ["created_at", "2015-11-20 03:21:22.582552"], ["updated_at", "2015-11-20 03:21:22.582552"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 23ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (133.9ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, attempt, jiveUrl, timestamp
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "76406c34-5df8-432f-a869-59192cacdafd-dev"], ["client_id", "67f63a8bc0eab437e3669fcfd6749c0e.i"], ["client_secret", "8b607db3f10f7c87d1a9729dd5c13a6e.s"], ["jive_url", "https://jive-butch.polldev.com:8443"], ["jive_signature", "7BrUyC5hQPLFx+vqg7/zkZYSJQ3nSisFHPm7D8BtEdY="], ["jive_signature_url", "https://jive-butch.polldev.com:8443/api/addons/validation/76406c34-5df8-432f-a869-59192cacdafd"], ["created_at", "2015-11-20 03:28:35.637183"], ["updated_at", "2015-11-20 03:28:35.637183"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 24ms (Views: 6.0ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (197.2ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "b22e3911-28ef-480c-ae3b-ca791ba86952"], ["client_id", "2zm4rzr9aiuvd4zhhg8kyfep229p2gce.i"], ["client_secret", "evaqjrbfyu70jlvnap8fhnj2h5mr4vus.s"], ["jive_url", "https://sandbox.jiveon.com"], ["jive_signature", "0YqbK1nW+L+j3ppE7PHo3CvM/pNyHIDbNwYYvkKJGXU="], ["jive_signature_url", "https://market.apps.jivesoftware.com/appsmarket/services/rest/jive/instance/validation/8ce5c231-fab8-46b1-b8b2-fc65deccbb5d"], ["created_at", "2015-11-20 20:40:39.905289"], ["updated_at", "2015-11-20 20:40:39.905289"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 20ms (Views: 5.0ms | ActiveRecord: 0.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (125.7ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "b22e3911-28ef-480c-ae3b-ca791ba86952"], ["client_id", "2zm4rzr9aiuvd4zhhg8kyfep229p2gce.i"], ["client_secret", "evaqjrbfyu70jlvnap8fhnj2h5mr4vus.s"], ["jive_url", "https://sandbox.jiveon.com"], ["jive_signature", "0YqbK1nW+L+j3ppE7PHo3CvM/pNyHIDbNwYYvkKJGXU="], ["jive_signature_url", "https://market.apps.jivesoftware.com/appsmarket/services/rest/jive/instance/validation/8ce5c231-fab8-46b1-b8b2-fc65deccbb5d"], ["created_at", "2015-11-20 20:42:54.039829"], ["updated_at", "2015-11-20 20:42:54.039829"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 17ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (162.1ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (56.5ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (76.0ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (236.5ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (62.9ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (174.5ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (88.0ms)[0m  DELETE FROM "jive_add_ons";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'jive_add_ons';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by JiveAddOns::AddOnsController#create as HTML
+  Parameters: {"CONTENT_TYPE"=>"application/json", "ACCEPT"=>"application/json"}
+Unpermitted parameters: clientId, tenantId, jiveSignatureURL, clientSecret, jiveSignature, jiveUrl, timestamp
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "jive_add_ons" ("tenant_id", "client_id", "client_secret", "jive_url", "jive_signature", "jive_signature_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tenant_id", "b22e3911-28ef-480c-ae3b-ca791ba86952"], ["client_id", "2zm4rzr9aiuvd4zhhg8kyfep229p2gce.i"], ["client_secret", "evaqjrbfyu70jlvnap8fhnj2h5mr4vus.s"], ["jive_url", "https://sandbox.jiveon.com"], ["jive_signature", "0YqbK1nW+L+j3ppE7PHo3CvM/pNyHIDbNwYYvkKJGXU="], ["jive_signature_url", "https://market.apps.jivesoftware.com/appsmarket/services/rest/jive/instance/validation/8ce5c231-fab8-46b1-b8b2-fc65deccbb5d"], ["created_at", "2015-11-20 20:50:02.235905"], ["updated_at", "2015-11-20 20:50:02.235905"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered text template (0.0ms)
+Completed 200 OK in 424ms (Views: 6.9ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m

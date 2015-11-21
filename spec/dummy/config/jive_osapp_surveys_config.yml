@@ -1,0 +1,52 @@
+development:
+  module_prefs:
+    title: __MSG_moduleprefs_title__
+    description: __MSG_moduleprefs_description__
+    author: Butch Marshall
+    author_affiliation: TemboSocial
+    author_email: butch.a.marshall@gmail.com
+  features:
+    - dynamic-height
+    - dynamic-width
+    - jive-core-v3
+    - jive-core-v3-resolver
+    - jive-core-v2
+    - osapi
+    - settitle
+    - views
+    - opensocial-data
+    - embedded-experiences
+    - opensocial-data
+    - selection
+    - jquery-1.6
+    - settitle
+    - views
+    - opensocial:
+        version: 2.5
+  locales:
+    en:
+      moduleprefs_title: The Best Survey Ever
+      moduleprefs_description: An app which serves up the best survey ever!
+      moduleprefs_nav_label: Nav Menu
+    fr:
+      moduleprefs_title: Le Meilleur enquête jamais
+      moduleprefs_description: Une application qui sert la meilleure enquête jamais !
+      moduleprefs_navmenu_label: Nav Menu
+  actions:
+    -
+      id: com.dummyapp.navmenu
+      path: jive/actions/navmenu
+      label: __MSG_moduleprefs_navmenu_label__
+      view: dummyapp.navmenu
+  content:
+    -
+      type: html
+      view: canvas
+      href: /surveyapp/canvas
+    - type: html
+      view: dummyapp.navmenu
+      href: /surveyapp/navmenu
+test:
+  host: test
+production:
+  host: test
