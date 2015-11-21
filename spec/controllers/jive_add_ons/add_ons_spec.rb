@@ -1,12 +1,13 @@
 require 'spec_helper'
 
-describe JiveAddOns::AddOnsController, :type => :controller do
+describe ::JiveAddOns::AddOnsController, :type => :controller do
 	routes { JiveAddOns::Engine.routes }
 
 	before(:each) do
 		@header_params = {
 			:CONTENT_TYPE => 'application/json',
-			:ACCEPT => 'application/json'
+			:ACCEPT => 'application/json',
+			:add_on_name => "dummy"
 		}
 	end
 

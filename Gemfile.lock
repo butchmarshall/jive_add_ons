@@ -1,21 +1,10 @@
 PATH
   remote: .
   specs:
-    jive_add_ons (0.0.1)
+    jive_add_ons (0.0.2)
       jive-signed_request
       jive_os_apps (~> 0.0.1)
       rails (~> 4.2.5)
-
-PATH
-  remote: ../jive_os_apps
-  specs:
-    jive_os_apps (0.0.1)
-      rails (~> 4.2.5)
-
-PATH
-  remote: ../ruby-jive-signed_request
-  specs:
-    jive-signed_request (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -75,6 +64,9 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    jive-signed_request (0.1.1)
+    jive_os_apps (0.0.2)
+      rails (~> 4.2.5)
     json (1.8.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -83,7 +75,7 @@ GEM
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.3)
-    nokogiri (1.6.6.3)
+    nokogiri (1.6.6.4)
       mini_portile (~> 0.6.0)
     rack (1.6.4)
     rack-cors (0.4.0)
@@ -114,7 +106,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
-    rspec-core (3.4.0)
+    rspec-core (3.4.1)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -130,7 +122,7 @@ GEM
       rspec-expectations (~> 3.4.0)
       rspec-mocks (~> 3.4.0)
       rspec-support (~> 3.4.0)
-    rspec-support (3.4.0)
+    rspec-support (3.4.1)
     sprockets (3.4.0)
       rack (> 1, < 3)
     sprockets-rails (2.3.3)
@@ -153,9 +145,7 @@ DEPENDENCIES
   capybara
   database_cleaner
   factory_girl_rails
-  jive-signed_request!
   jive_add_ons!
-  jive_os_apps!
   rack-cors
   rspec-rails
   sqlite3 (> 0)
