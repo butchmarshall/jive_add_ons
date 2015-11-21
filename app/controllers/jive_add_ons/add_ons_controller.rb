@@ -11,6 +11,7 @@ end
 module JiveAddOns
 	class AddOnsController < ApplicationController
 		include Concerns::Controllers::AddOns
+		rescue_from ActionController::BadRequest, :with => :failure
 
 		before_filter :validate_authenticity
 	end

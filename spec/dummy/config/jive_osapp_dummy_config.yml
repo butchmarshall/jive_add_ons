@@ -25,11 +25,11 @@ development:
         version: 2.5
   locales:
     en:
-      moduleprefs_title: The Best Survey Ever
-      moduleprefs_description: An app which serves up the best survey ever!
+      moduleprefs_title: The Best app Ever
+      moduleprefs_description: An app which serves up the best app ever!
       moduleprefs_nav_label: Nav Menu
     fr:
-      moduleprefs_title: Le Meilleur enquête jamais
+      moduleprefs_title: Le Meilleur app jamais
       moduleprefs_description: Une application qui sert la meilleure enquête jamais !
       moduleprefs_navmenu_label: Nav Menu
   actions:
@@ -42,10 +42,10 @@ development:
     -
       type: html
       view: canvas
-      href: /surveyapp/canvas
+      href: /canvas.html
     - type: html
       view: dummyapp.navmenu
-      href: /surveyapp/navmenu
+      href: /navmenu.html
 test:
   host: test
 production:

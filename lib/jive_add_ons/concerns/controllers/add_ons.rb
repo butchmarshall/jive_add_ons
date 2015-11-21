@@ -5,27 +5,29 @@ module JiveAddOns
 				extend ActiveSupport::Concern
 
 				def create
-					@add_on = JiveAddOns::AddOn.create(register_params)
-					render :text => @add_on.inspect
+					@add_on = JiveAddOns::AddOn.new(register_params)
+					@add_on.uninstalled = false
+					@add_on.save
+
+					render :nothing => true, :status => 204
 				end
 
 				def destroy
 					@add_on = JiveAddOns::AddOn.where(unregister_params).first
+					@add_on.update_attributes(:uninstalled => true)
 
-					respond_to do |format|
-						if @add_on && @add_on.update_attributes(:uninstalled => true)
-							format.json { render :json => {} }
-						else
-							format.json { render :json => {}, status: :not_found }
-						end
-					end
+					render :nothing => true, :status => 204
 				end
 
 				protected
 					def validate_authenticity
 						if !::Jive::SignedRequest.validate_registration(json_params)
-							raise 'Could not validate request'
+							raise ActionController::BadRequest
 						end
+					end
+
+					def failure
+						render :nothing => true, :status => 403
 					end
 
 				private
@@ -34,7 +36,7 @@ module JiveAddOns
 					end
 
 					def unregister_params
-						params.tap { |whitelisted|
+						json_params.tap { |whitelisted|
 							whitelisted[:tenant_id] = whitelisted[:tenantId]
 							whitelisted[:client_id] = whitelisted[:clientId]
 							whitelisted[:jive_url] = whitelisted[:jiveUrl]

@@ -12,5 +12,5 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
-gem "jive_os_apps", :path => "../jive_os_apps"
-gem "jive-signed_request", :path => "../ruby-jive-signed_request"
+#gem "jive_os_apps", :path => "../jive_os_apps"
+#gem "jive-signed_request", :path => "../ruby-jive-signed_request"

@@ -1,0 +1,19 @@
+{
+    "integrationUser": {
+        "systemAdmin": false
+    },
+    "osapps": [
+        {
+            "name": "Dummy OpenSocial App",
+            "displayName": "osapps.displayName",
+            "description": "osapps.description",
+            "id": "c053fc46-e657-409c-80b6-cd81df4aeaf1",
+            "appPath": "rails_engine_dummy_app",
+            "url": "%serviceURL%/jive/osapps/dummy/xml"
+        }
+    ],
+    "tiles": [
+    ],
+    "templates": [],
+    "jabCartridges": []
+}
