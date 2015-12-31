@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20150718193211) do
 
   create_table "jive_add_ons", force: :cascade do |t|
+    t.string   "name"
     t.string   "tenant_id"
     t.string   "client_id"
     t.string   "client_secret"

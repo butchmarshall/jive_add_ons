@@ -17,8 +17,7 @@ Gem::Specification.new do |s|
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 	s.test_files = Dir["test/**/*"]
 
-	s.add_dependency "rails", "~> 4.2.5"
-	s.add_dependency "jive_os_apps", "~> 0.0.1"
+	s.add_dependency "rails", ">= 4.2.0"
 	s.add_dependency "jive-signed_request"
 	
 	if RUBY_PLATFORM == 'java'
@@ -32,6 +31,4 @@ Gem::Specification.new do |s|
 	s.add_development_dependency "factory_girl_rails"
 	s.add_development_dependency "capybara"
 	s.add_development_dependency "database_cleaner"
-	s.add_development_dependency "rack-cors"
-	s.add_development_dependency "angular-ui-bootstrap-rails"
 end

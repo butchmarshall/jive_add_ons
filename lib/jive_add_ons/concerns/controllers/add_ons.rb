@@ -6,6 +6,7 @@ module JiveAddOns
 
 				def create
 					@add_on = JiveAddOns::AddOn.new(register_params)
+					@add_on.name = params[:name]
 					@add_on.uninstalled = false
 					@add_on.save
 
@@ -20,13 +21,28 @@ module JiveAddOns
 				end
 
 				protected
+					def validate_add_on_name
+						# Add on name is whitelisted
+						if JiveAddOns.config.whitelist.length > 0 && !JiveAddOns.config.whitelist.include?(params[:name])
+							raise ActionController::UnknownController
+						end
+						# Add on name is blacklisted
+						if JiveAddOns.config.blacklist.length > 0 && JiveAddOns.config.blacklist.include?(params[:name])
+							raise ActionController::UnknownController
+						end
+					end
+
 					def validate_authenticity
 						if !::Jive::SignedRequest.validate_registration(json_params)
 							raise ActionController::BadRequest
 						end
 					end
 
-					def failure
+					def failure_404
+						render :nothing => true, :status => 404
+					end
+
+					def failure_403
 						render :nothing => true, :status => 403
 					end
 

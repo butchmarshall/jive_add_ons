@@ -1,6 +1,7 @@
 class CreateJiveAddOns < ActiveRecord::Migration
 	def change
 		create_table :jive_add_ons do |t|
+			t.string :name
 			t.string :tenant_id
 			t.string :client_id
 			t.string :client_secret

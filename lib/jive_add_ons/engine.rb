@@ -10,4 +10,21 @@ module JiveAddOns
 			end
 		end
 	end
+	
+	def self.setup(&block)
+		@@config ||= JiveAddOns::Engine::Configuration.new
+
+		# Whitelist specific add-on names
+		@@config.whitelist = []
+		# Blacklist specific add-on names
+		@@config.blacklist = []
+
+		yield @@config if block
+
+		return @@config
+	end
+
+	def self.config
+		Rails.application.config
+	end
 end

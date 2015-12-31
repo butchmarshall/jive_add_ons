@@ -11,8 +11,10 @@ end
 module JiveAddOns
 	class AddOnsController < ApplicationController
 		include Concerns::Controllers::AddOns
-		rescue_from ActionController::BadRequest, :with => :failure
+		rescue_from ActionController::BadRequest, :with => :failure_403
+		rescue_from ActionController::UnknownController, :with => :failure_404
 
 		before_filter :validate_authenticity
+		before_filter :validate_add_on_name
 	end
 end

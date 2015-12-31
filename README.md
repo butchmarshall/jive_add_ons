@@ -8,6 +8,10 @@ JiveAddOns is a mountable engine for Rails that enables [Jive](https://www.jives
 Release Notes
 ============
 
+**0.0.4**
+ - Whitelist/blacklist functionality for add-on names
+ - Removed jive_os_apps integration - people should be able to make this choice themselves
+
 **0.0.2**
  - Dummy app now registers/unregisters with [Jive Sandbox](https://sandbox.jiveon.com)
 
@@ -33,11 +37,9 @@ Rails.application.routes.draw do
 end
 ```
 
-Configuration file for your first add-ons XML by adding a YAML file in /config/jive_osapp_[Name Here]_config.yml
-
-See /spec/dummy/config/jive_osapp_dummy_config.yml for an example
-
 See /spec/dummy/extension_src for the example add-on extension that is uploaded.  You'll need to change the endpoints!
+
+For whitelisting and blacklisting specific
 
 ## Contributing
 
