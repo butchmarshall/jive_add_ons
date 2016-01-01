@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jive_add_ons (0.0.4)
+    jive_add_ons (0.0.5)
       jive-signed_request
       rails (>= 4.2.0)
 
