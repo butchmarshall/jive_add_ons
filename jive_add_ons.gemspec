@@ -19,14 +19,14 @@ Gem::Specification.new do |s|
 
 	s.add_dependency "rails", ">= 4.2.0"
 	s.add_dependency "jive-signed_request"
-	
+
 	if RUBY_PLATFORM == 'java'
 		s.add_development_dependency "jdbc-sqlite3", "> 0"
 		s.add_development_dependency "activerecord-jdbcsqlite3-adapter", "> 0"
 	else
 		s.add_development_dependency "sqlite3", "> 0"
 	end
-	
+
 	s.add_development_dependency "rspec-rails"
 	s.add_development_dependency "factory_girl_rails"
 	s.add_development_dependency "capybara"
