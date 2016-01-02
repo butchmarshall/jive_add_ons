@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150718193211) do
+ActiveRecord::Schema.define(version: 20160102045039) do
 
   create_table "jive_add_ons", force: :cascade do |t|
     t.string   "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150718193211) do
     t.string   "jive_signature"
     t.string   "jive_signature_url"
     t.string   "jive_url"
+    t.string   "timestamp"
     t.boolean  "uninstalled"
     t.integer  "attempt"
     t.datetime "created_at",         null: false

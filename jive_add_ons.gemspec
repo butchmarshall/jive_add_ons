@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 	s.test_files = Dir["test/**/*"]
 
 	s.add_dependency "rails", ">= 4.2.0"
-	s.add_dependency "jive-signed_request"
+	s.add_dependency "jive-add_on"
 
 	if RUBY_PLATFORM == 'java'
 		s.add_development_dependency "jdbc-sqlite3", "> 0"

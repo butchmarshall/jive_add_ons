@@ -5,19 +5,22 @@ module JiveAddOns
 				extend ActiveSupport::Concern
 
 				def create
-					@add_on = JiveAddOns::AddOn.new(register_params)
+					@add_on = Jive::AddOn::Model.new(register_params)
 					@add_on.name = params[:name]
 					@add_on.uninstalled = false
-					@add_on.save
 
-					render :nothing => true, :status => 204
+					render :nothing => true, :status => ((@add_on.save)? 204 : 403)
 				end
 
 				def destroy
-					@add_on = JiveAddOns::AddOn.where(unregister_params).first
-					@add_on.update_attributes(:uninstalled => true)
+					status = 403
 
-					render :nothing => true, :status => 204
+					@add_on = Jive::AddOn::Model.where(unregister_params).first
+					if @add_on && @add_on.update_attributes(:uninstalled => true)
+						status = 204
+					end
+
+					render :nothing => true, :status => status
 				end
 
 				protected
@@ -32,18 +35,8 @@ module JiveAddOns
 						end
 					end
 
-					def validate_authenticity
-						if !::Jive::SignedRequest.validate_registration(json_params)
-							raise ActionController::BadRequest
-						end
-					end
-
 					def failure_404
 						render :nothing => true, :status => 404
-					end
-
-					def failure_403
-						render :nothing => true, :status => 403
 					end
 
 				private
@@ -73,13 +66,15 @@ module JiveAddOns
 							whitelisted[:jive_url] = whitelisted[:jiveUrl]
 							whitelisted[:jive_signature] = whitelisted[:jiveSignature]
 							whitelisted[:jive_signature_url] = whitelisted[:jiveSignatureURL]
+							whitelisted[:timestamp] = whitelisted[:timestamp]
 						}.permit(
 							:tenant_id,
 							:client_id,
 							:client_secret,
 							:jive_url,
 							:jive_signature,
-							:jive_signature_url
+							:jive_signature_url,
+							:timestamp
 						)
 					end
 			end

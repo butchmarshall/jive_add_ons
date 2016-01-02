@@ -8,6 +8,9 @@ JiveAddOns is a mountable engine for Rails that enables [Jive](https://www.jives
 Release Notes
 ============
 
+**0.0.6**
+ - Extracted `JiveAddOns::AddOn` ActiveRecord functionality into a the separate gem [Jive::AddOn](https://github.com/butchmarshall/ruby-jive-add_on) and now uses interface Jive::AddOn::Model
+
 **0.0.4**
  - Whitelist/blacklist functionality for add-on names
  - Removed jive_os_apps integration - people should be able to make this choice themselves

@@ -92,15 +92,16 @@ describe ::JiveAddOns::AddOnsController, :type => :controller do
 	describe 'POST unregister' do
 		describe 'when unregistering' do
 			before(:each) do
-				@add_on = JiveAddOns::AddOn.new({
+				@add_on = Jive::AddOn::Model.new({
 					"tenant_id"=>"b22e3911-28ef-480c-ae3b-ca791ba86952",
 					"client_id"=>"2zm4rzr9aiuvd4zhhg8kyfep229p2gce.i",
 					"client_secret"=>"evaqjrbfyu70jlvnap8fhnj2h5mr4vus.s",
 					"jive_url"=>"https://sandbox.jiveon.com",
 					"jive_signature"=>"0YqbK1nW+L+j3ppE7PHo3CvM/pNyHIDbNwYYvkKJGXU=",
-					"jive_signature_url"=>"https://market.apps.jivesoftware.com/appsmarket/services/rest/jive/instance/validation/8ce5c231-fab8-46b1-b8b2-fc65deccbb5d"
+					"jive_signature_url"=>"https://market.apps.jivesoftware.com/appsmarket/services/rest/jive/instance/validation/8ce5c231-fab8-46b1-b8b2-fc65deccbb5d",
+					"timestamp"=>'2015-11-20T16:04:55.895+0000',
 				})
-				@add_on.save
+				expect(@add_on.save).to eq(true)
 			end
 
 			it 'should unregister the addon when passed correct parameters' do
