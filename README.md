@@ -26,9 +26,11 @@ Add this line to your application's Gemfile:
 gem 'jive_add_ons'
 ```
 
-And then execute:
+then run
 
-    $ bundle
+```ruby
+bundle exec rake db:migrate
+```
 
 ## Usage
 

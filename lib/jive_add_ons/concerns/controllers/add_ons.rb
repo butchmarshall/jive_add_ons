@@ -26,11 +26,11 @@ module JiveAddOns
 				protected
 					def validate_add_on_name
 						# Add on name is whitelisted
-						if JiveAddOns.config.whitelist.length > 0 && !JiveAddOns.config.whitelist.include?(params[:name])
+						if JiveAddOns.config.respond_to?(:whitelist) && JiveAddOns.config.whitelist.length > 0 && !JiveAddOns.config.whitelist.include?(params[:name])
 							raise ActionController::UnknownController
 						end
 						# Add on name is blacklisted
-						if JiveAddOns.config.blacklist.length > 0 && JiveAddOns.config.blacklist.include?(params[:name])
+						if JiveAddOns.config.respond_to?(:blacklist) && JiveAddOns.config.blacklist.length > 0 && JiveAddOns.config.blacklist.include?(params[:name])
 							raise ActionController::UnknownController
 						end
 					end
