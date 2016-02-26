@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 	s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
 	s.add_dependency "rails", ">= 4.2.0"
-	s.add_dependency "jive-add_on"
+	s.add_dependency "jive-add_on", ">= 0.0.2"
 
 	if RUBY_PLATFORM == 'java'
 		s.add_development_dependency "jdbc-sqlite3", "> 0"
