@@ -8,8 +8,11 @@ JiveAddOns is a mountable engine for Rails that enables [Jive](https://www.jives
 Release Notes
 ============
 
+**0.0.8**
+ - Update to work with the latest [Jive::AddOn](https://github.com/butchmarshall/ruby-jive-add_on) gem
+
 **0.0.6**
- - Extracted `JiveAddOns::AddOn` ActiveRecord functionality into a the separate gem [Jive::AddOn](https://github.com/butchmarshall/ruby-jive-add_on) and now uses interface Jive::AddOn::Model
+ - Extracted `JiveAddOns::AddOn` ActiveRecord functionality into a the separate gem [Jive::AddOn](https://github.com/butchmarshall/ruby-jive-add_on) and now uses interface Jive::AddOn
 
 **0.0.4**
  - Whitelist/blacklist functionality for add-on names
@@ -26,9 +29,10 @@ Add this line to your application's Gemfile:
 gem 'jive_add_ons'
 ```
 
-then run
+then add and run the ActiveRecord migrations.
 
 ```ruby
+bundle exec rails generate jive:add_on:active_record
 bundle exec rake db:migrate
 ```
 

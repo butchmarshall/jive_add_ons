@@ -92,7 +92,7 @@ describe ::JiveAddOns::AddOnsController, :type => :controller do
 	describe 'POST unregister' do
 		describe 'when unregistering' do
 			before(:each) do
-				@add_on = Jive::AddOn::Model.new({
+				@add_on = Jive::AddOn.new({
 					"tenant_id"=>"b22e3911-28ef-480c-ae3b-ca791ba86952",
 					"client_id"=>"2zm4rzr9aiuvd4zhhg8kyfep229p2gce.i",
 					"client_secret"=>"evaqjrbfyu70jlvnap8fhnj2h5mr4vus.s",

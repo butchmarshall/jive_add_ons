@@ -5,7 +5,7 @@ module JiveAddOns
 				extend ActiveSupport::Concern
 
 				def create
-					@add_on = Jive::AddOn::Model.new(register_params)
+					@add_on = Jive::AddOn.new(register_params)
 					@add_on.name = params[:name]
 					@add_on.uninstalled = false
 
@@ -15,7 +15,7 @@ module JiveAddOns
 				def destroy
 					status = 403
 
-					@add_on = Jive::AddOn::Model.where(unregister_params).first
+					@add_on = Jive::AddOn.where(unregister_params).first
 					if @add_on && @add_on.update_attributes(:uninstalled => true)
 						status = 204
 					end
